@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<search>
+  <entry>
+    <title><![CDATA[第一篇文章]]></title>
+    <url>%2Fother%2F2019%2F07%2F19%2Fpost-my-firt-post.html</url>
+    <content type="text"><![CDATA[这是我第一篇通过hexo 发布的文章]]></content>
+      <categories>
+        <category>other</category>
+      </categories>
+      <tags>
+        <tag>第一次</tag>
+      </tags>
+  </entry>
+</search>
