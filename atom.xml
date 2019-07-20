@@ -1,16 +1,16 @@
 <?xml version="1.0" encoding="utf-8"?>
 <feed xmlns="http://www.w3.org/2005/Atom">
-  <title>snakeman啊</title>
+  <title>snakeman的博客</title>
   
-  <subtitle>这是一个学习博客</subtitle>
+  <subtitle>welcome</subtitle>
   <link href="/atom.xml" rel="self"/>
   
-  <link href="http://snakemango.com/"/>
+  <link href="https://snakemango.github.io/"/>
   <updated>2019-07-20T08:27:43.100Z</updated>
-  <id>http://snakemango.com/</id>
+  <id>https://snakemango.github.io/</id>
   
   <author>
-    <name>she</name>
+    <name>佘粤颖</name>
     
   </author>
   
@@ -18,8 +18,8 @@
   
   <entry>
     <title>第一篇文章</title>
-    <link href="http://snakemango.com/undefined/post-my-firt-post/"/>
-    <id>http://snakemango.com/undefined/post-my-firt-post/</id>
+    <link href="https://snakemango.github.io/other/2019/07/19/post-my-firt-post.html"/>
+    <id>https://snakemango.github.io/other/2019/07/19/post-my-firt-post.html</id>
     <published>2019-07-19T11:11:29.000Z</published>
     <updated>2019-07-20T08:27:43.100Z</updated>
     
@@ -35,10 +35,10 @@
     
     </summary>
     
-      <category term="other" scheme="http://snakemango.com/categories/other/"/>
+      <category term="other" scheme="https://snakemango.github.io/categories/other/"/>
     
     
-      <category term="第一次" scheme="http://snakemango.com/tags/%E7%AC%AC%E4%B8%80%E6%AC%A1/"/>
+      <category term="第一次" scheme="https://snakemango.github.io/tags/%E7%AC%AC%E4%B8%80%E6%AC%A1/"/>
     
   </entry>
   
