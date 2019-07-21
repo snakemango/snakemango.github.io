@@ -6,7 +6,7 @@
   <link href="/atom.xml" rel="self"/>
   
   <link href="https://snakemango.github.io/"/>
-  <updated>2019-07-21T08:32:47.143Z</updated>
+  <updated>2019-07-21T14:46:22.215Z</updated>
   <id>https://snakemango.github.io/</id>
   
   <author>
@@ -15,6 +15,32 @@
   </author>
   
   <generator uri="http://hexo.io/">Hexo</generator>
+  
+  <entry>
+    <title>蓝桥杯算法学习整理.转载</title>
+    <link href="https://snakemango.github.io/%E5%AD%A6%E4%B9%A0/2019/07/21/ddd.html"/>
+    <id>https://snakemango.github.io/学习/2019/07/21/ddd.html</id>
+    <published>2019-07-21T11:11:29.000Z</published>
+    <updated>2019-07-21T14:46:22.215Z</updated>
+    
+    <content type="html"><![CDATA[<p> 报名了蓝桥杯，但是对于算法的基础却不是很好，收集了一些学习的链接，以下链接都是转载自别人名下的博客文章，如果博主介意的话，请通知我立即删除。<br>供日后复习时使用：<br>前部分是摘录自：庞俊伟的博客</p><p>1.Java十进制数与其余进制数转换问题<br>2.进制转化知识完成各进制之间的转化<br>3.JAVA高精度数值运算方法，小数点后保留位数，结合相关例题进行介绍！<br>4.JAVA全排列<br>（这个有点理解不了。。。。。。）<br>5.入门训练（序列求和，圆的面积，Fibonacci数列）JAVA代码<br>6.数组排列（JAVA语言实现）<br>7.基础训练–特殊回文数，特殊的数字，回文数（JAVA）<br>文章中的代码缺少了限制条件，题目中要求的四位数 五位数，六位数没有加入限制条件，会导致输出的内容里包含位数少于题目的数据。可以在集合arraylist添加数据的前面加入一条判断语句，if（代加入的数 &gt;10000），这样就可以避免添加一些较小的数据了。<br>唯一不解的是由于符合条件的数据较多，看着比较乱，在输出的时候，加一个条件，每行输出10个数据，之后加入一个换行，但是这个条件语句加入之后，导致程序明显慢了很多。。。。甚至半天了还是没有输出数据<br>8.基础训练–杨辉三角、查找整数，数列特征、01字串–Method<br>需要注意一点：for循环的起时值，赋值是外层循环从2开始，内层是从0开始。<br>文章中杨辉三角的代码块中有瑕疵，for语句嵌套循环赋值和输出时，内层循环为for(int j=0; j &lt;= i; j++)，否则将导致每行的最后一个1无法输出<br>9.基础训练–贪心Huffman树、字母图形–讲解<br>此处的贪心Huffuman方法有错误，可以借鉴下面的方法，个人感觉思路比较清晰：</p><p>import java.util.Arrays;<br>import java.util.ArrayList;<br>import java.util.Scanner;<br>public class huffuman<br>{<br>    //贪心Huffuman方法<br>    public static void main(String[] args){<br>        Scanner sc = new Scanner(System.in);<br>        int n = sc.nextInt(); //第一行先确定输入的个数<br>        ArrayList<integer> arraylist = new ArrayList&lt;&gt;();<br>        for (int i=0; i&lt;n; i++ ) //将待计算的数据加入到集合中<br>        {<br>            arraylist.add(sc.nextInt());<br>        }<br>        int sum = 0;  //初始化消耗的费用</integer></p><pre><code>    while (arraylist.size() &gt; 1)     {        Object[] temp = arraylist.toArray(); //将集合转换为数组        Arrays.sort(temp); //排序        arraylist.removeAll(arraylist); //删除原来的数据，将排好序的数组加到集合里面        for (int i=0; i &lt; temp.length; i++ )        {            arraylist.add((Integer)temp[i]);        }        int a = arraylist.get(0) + arraylist.get(1); 保存此次排序的两个最小值之和        sum += a; //费用累加        //这里两次删除第一个元素，即删掉了原来排序中最小的两个数值        arraylist.remove(0);        arraylist.remove(0);         //将最小值的和添加到集合当中去        arraylist.add(a);    }    System.out.println(sum);}</code></pre><p>}</p><pre><code>123456789101112131415161718192021222324252627282930313233343536</code></pre><p>图形这个实在是理解不了，第一行遍历的时候：c[i] = (char)’B’ + i 为什么是B而不是A呢？试了一下，用A的话，第一行输出的第一个元素就是@了而不是A<br>//2018/3/18编辑：今天翻阅代码时，在第一次for循环之后打印出数组发现，第一次初始化数组后数组为：BCDEFGH，这样在后面的每行输出时，针对这一行的数据，加上行数和输出下标的判断条件 就可以改变输出的数据了<br>10.2n皇后—-（回溯法，Java)</p><h2 id="看了很多这道题的解法，就数这个博主的注释很多，但是还是有点不太理解，记录下来，以后接着学习。"><a href="#看了很多这道题的解法，就数这个博主的注释很多，但是还是有点不太理解，记录下来，以后接着学习。" class="headerlink" title="看了很多这道题的解法，就数这个博主的注释很多，但是还是有点不太理解，记录下来，以后接着学习。"></a>看了很多这道题的解法，就数这个博主的注释很多，但是还是有点不太理解，记录下来，以后接着学习。</h2><p>作者：linmengmeng_1314<br>来源：CSDN<br>原文：<a href="https://blog.csdn.net/linmengmeng_1314/article/details/79533129" target="_blank" rel="noopener">https://blog.csdn.net/linmengmeng_1314/article/details/79533129</a> </p>]]></content>
+    
+    <summary type="html">
+    
+      
+      
+        &lt;p&gt; 报名了蓝桥杯，但是对于算法的基础却不是很好，收集了一些学习的链接，以下链接都是转载自别人名下的博客文章，如果博主介意的话，请通知我立即删除。&lt;br&gt;供日后复习时使用：&lt;br&gt;前部分是摘录自：庞俊伟的博客&lt;/p&gt;
+&lt;p&gt;1.Java十进制数与其余进制数转换问题&lt;br&gt;2.进
+      
+    
+    </summary>
+    
+      <category term="学习" scheme="https://snakemango.github.io/categories/%E5%AD%A6%E4%B9%A0/"/>
+    
+    
+      <category term="转载" scheme="https://snakemango.github.io/tags/%E8%BD%AC%E8%BD%BD/"/>
+    
+  </entry>
   
   <entry>
     <title>第一篇文章</title>
