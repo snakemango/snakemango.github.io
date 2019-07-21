@@ -6,7 +6,7 @@
   <link href="/atom.xml" rel="self"/>
   
   <link href="https://snakemango.github.io/"/>
-  <updated>2019-07-20T08:27:43.100Z</updated>
+  <updated>2019-07-21T08:32:47.143Z</updated>
   <id>https://snakemango.github.io/</id>
   
   <author>
@@ -21,7 +21,7 @@
     <link href="https://snakemango.github.io/other/2019/07/19/post-my-firt-post.html"/>
     <id>https://snakemango.github.io/other/2019/07/19/post-my-firt-post.html</id>
     <published>2019-07-19T11:11:29.000Z</published>
-    <updated>2019-07-20T08:27:43.100Z</updated>
+    <updated>2019-07-21T08:32:47.143Z</updated>
     
     <content type="html"><![CDATA[<p> 这是我第一篇通过hexo 发布的文章</p>]]></content>
     
@@ -37,6 +37,8 @@
     
       <category term="other" scheme="https://snakemango.github.io/categories/other/"/>
     
+    
+      <category term="tpp" scheme="https://snakemango.github.io/tags/tpp/"/>
     
       <category term="第一次" scheme="https://snakemango.github.io/tags/%E7%AC%AC%E4%B8%80%E6%AC%A1/"/>
     
