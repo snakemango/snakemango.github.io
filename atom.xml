@@ -6,7 +6,7 @@
   <link href="/atom.xml" rel="self"/>
   
   <link href="https://snakemango.github.io/"/>
-  <updated>2019-07-22T16:37:53.152Z</updated>
+  <updated>2019-07-29T18:28:13.198Z</updated>
   <id>https://snakemango.github.io/</id>
   
   <author>
@@ -15,6 +15,38 @@
   </author>
   
   <generator uri="http://hexo.io/">Hexo</generator>
+  
+  <entry>
+    <title>Java中的b=b++与c++中是不同的</title>
+    <link href="https://snakemango.github.io/java/2019/07/30/2019-07-30-Java%E4%B8%AD%E7%9A%84b=b++%E4%B8%8Ec++%E4%B8%AD%E6%98%AF%E4%B8%8D%E5%90%8C%E7%9A%84.html"/>
+    <id>https://snakemango.github.io/java/2019/07/30/2019-07-30-Java中的b=b++与c++中是不同的.html</id>
+    <published>2019-07-29T18:05:29.000Z</published>
+    <updated>2019-07-29T18:28:13.198Z</updated>
+    
+    <content type="html"><![CDATA[<p>Java中经常有一些不同于c++，下面是一个要注意的例子</p><p>代码如下：</p><p><code>int b = 1;     int a=1;    for(int i = 0;i &lt; 100;i++)    {        b = b++;        a++;    }    System.out.println(&quot;b = &quot;+b);    System.out.println(&quot;a = &quot;+a);</code></p><p><code>Output</code>:  b = 1<code>a = 101</code></p><p>b++这个表达式是有返回值的，返回的值是自加前的b,所以即使后面的b+自加了，返回的b还是1。</p><p>换个思路讲，如果把b++换成++b那么b的输出结果也会是101，因为此时的返回值是自加后的b;</p><p>而在c++中（b = b++）和（b++）的输出结果是一样的。</p><p>下面看穿插一道经典的C语言的经典输出题目</p><p><code>int a = 1;</code><br><code>printf(&quot;%d, %d, a = %d\n&quot;, (a*=2), (a+=3), a);</code><br><code>return 0;</code></p><p><a href="https://blog.csdn.net/Code_Mart/article/details/53212238" target="_blank" rel="noopener">题目来源的博客，有答案</a></p>]]></content>
+    
+    <summary type="html">
+    
+      
+      
+        &lt;p&gt;Java中经常有一些不同于c++，下面是一个要注意的例子&lt;/p&gt;
+&lt;p&gt;代码如下：&lt;/p&gt;
+&lt;p&gt;&lt;code&gt;int b = 1;
+     int a=1;
+    for(int i = 0;i &amp;lt; 100;i++)
+    {
+        b = b++;
+
+      
+    
+    </summary>
+    
+      <category term="java" scheme="https://snakemango.github.io/categories/java/"/>
+    
+    
+      <category term="笔记" scheme="https://snakemango.github.io/tags/%E7%AC%94%E8%AE%B0/"/>
+    
+  </entry>
   
   <entry>
     <title>大一生活在广财大</title>
