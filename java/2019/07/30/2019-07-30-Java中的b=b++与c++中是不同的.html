@@ -100,18 +100,18 @@
   };
 </script>
 
-  <meta name="description" content="Java中经常有一些不同于c++，下面是一个要注意的例子 代码如下： int b = 1;      int a=1;     for(int i = 0;i &amp;lt; 100;i++)     {         b = b++;         a++;     }     System.out.println(&amp;quot;b = &amp;quot;+b);     System.out.print">
+  <meta name="description" content="Java中经常有一些不同于c++，下面是一个要注意的例子 代码如下： 123456789 int b = 1; int a=1;for(int i = 0;i &amp;lt; 100;i++)&amp;#123;    b = b++;    a++;&amp;#125;System.out.println(&quot;b = &quot;+b);System.out.println(&quot;a = &quot;+a);  Output:  b = 1">
 <meta name="keywords" content="笔记">
 <meta property="og:type" content="article">
 <meta property="og:title" content="Java中的b=b++与c++中是不同的">
 <meta property="og:url" content="https://snakemango.github.io/java/2019/07/30/2019-07-30-Java中的b=b++与c++中是不同的.html">
 <meta property="og:site_name" content="snakeman的博客">
-<meta property="og:description" content="Java中经常有一些不同于c++，下面是一个要注意的例子 代码如下： int b = 1;      int a=1;     for(int i = 0;i &amp;lt; 100;i++)     {         b = b++;         a++;     }     System.out.println(&amp;quot;b = &amp;quot;+b);     System.out.print">
+<meta property="og:description" content="Java中经常有一些不同于c++，下面是一个要注意的例子 代码如下： 123456789 int b = 1; int a=1;for(int i = 0;i &amp;lt; 100;i++)&amp;#123;    b = b++;    a++;&amp;#125;System.out.println(&quot;b = &quot;+b);System.out.println(&quot;a = &quot;+a);  Output:  b = 1">
 <meta property="og:locale" content="zh-CN">
-<meta property="og:updated_time" content="2019-07-29T18:28:13.198Z">
+<meta property="og:updated_time" content="2019-07-29T18:57:14.575Z">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:title" content="Java中的b=b++与c++中是不同的">
-<meta name="twitter:description" content="Java中经常有一些不同于c++，下面是一个要注意的例子 代码如下： int b = 1;      int a=1;     for(int i = 0;i &amp;lt; 100;i++)     {         b = b++;         a++;     }     System.out.println(&amp;quot;b = &amp;quot;+b);     System.out.print">
+<meta name="twitter:description" content="Java中经常有一些不同于c++，下面是一个要注意的例子 代码如下： 123456789 int b = 1; int a=1;for(int i = 0;i &amp;lt; 100;i++)&amp;#123;    b = b++;    a++;&amp;#125;System.out.println(&quot;b = &quot;+b);System.out.println(&quot;a = &quot;+a);  Output:  b = 1">
 
 
 
@@ -444,7 +444,7 @@
                 
               
 
-              <time title="创建时间：2019-07-30 02:05:29 / 修改时间：02:28:13" itemprop="dateCreated datePublished" datetime="2019-07-30T02:05:29+08:00">2019-07-30</time>
+              <time title="创建时间：2019-07-30 02:05:29 / 修改时间：02:57:14" itemprop="dateCreated datePublished" datetime="2019-07-30T02:05:29+08:00">2019-07-30</time>
             </span>
           
 
@@ -505,21 +505,15 @@
       
         <p>Java中经常有一些不同于c++，下面是一个要注意的例子</p>
 <p>代码如下：</p>
-<p><code>int b = 1;
-     int a=1;
-    for(int i = 0;i &lt; 100;i++)
-    {
-        b = b++;
-        a++;
-    }
-    System.out.println(&quot;b = &quot;+b);
-    System.out.println(&quot;a = &quot;+a);</code></p>
-<p><code>Output</code>:  b = 1<code>a = 101</code></p>
+<figure class="highlight java"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br></pre></td><td class="code"><pre><span class="line"> <span class="keyword">int</span> b = <span class="number">1</span>;</span><br><span class="line"> <span class="keyword">int</span> a=<span class="number">1</span>;</span><br><span class="line"><span class="keyword">for</span>(<span class="keyword">int</span> i = <span class="number">0</span>;i &lt; <span class="number">100</span>;i++)</span><br><span class="line">&#123;</span><br><span class="line">    b = b++;</span><br><span class="line">    a++;</span><br><span class="line">&#125;</span><br><span class="line">System.out.println(<span class="string">"b = "</span>+b);</span><br><span class="line">System.out.println(<span class="string">"a = "</span>+a);</span><br></pre></td></tr></table></figure>
+
+<p><code>Output</code>:  b = 1<br>                a = 101</p>
 <p>b++这个表达式是有返回值的，返回的值是自加前的b,所以即使后面的b+自加了，返回的b还是1。</p>
 <p>换个思路讲，如果把b++换成++b那么b的输出结果也会是101，因为此时的返回值是自加后的b;</p>
 <p>而在c++中（b = b++）和（b++）的输出结果是一样的。</p>
 <p>下面看穿插一道经典的C语言的经典输出题目</p>
-<p><code>int a = 1;</code><br><code>printf(&quot;%d, %d, a = %d\n&quot;, (a*=2), (a+=3), a);</code><br><code>return 0;</code></p>
+<figure class="highlight c"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">int</span> a = <span class="number">1</span>;</span><br><span class="line"><span class="built_in">printf</span>(<span class="string">"%d, %d, a = %d\n"</span>, (a*=<span class="number">2</span>), (a+=<span class="number">3</span>), a);</span><br><span class="line"><span class="keyword">return</span> <span class="number">0</span>;</span><br></pre></td></tr></table></figure>
+
 <p><a href="https://blog.csdn.net/Code_Mart/article/details/53212238" target="_blank" rel="noopener">题目来源的博客，有答案</a></p>
 
       

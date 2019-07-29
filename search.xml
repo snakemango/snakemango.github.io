@@ -3,7 +3,7 @@
   <entry>
     <title><![CDATA[Java中的b=b++与c++中是不同的]]></title>
     <url>%2Fjava%2F2019%2F07%2F30%2F2019-07-30-Java%E4%B8%AD%E7%9A%84b%3Db%2B%2B%E4%B8%8Ec%2B%2B%E4%B8%AD%E6%98%AF%E4%B8%8D%E5%90%8C%E7%9A%84.html</url>
-    <content type="text"><![CDATA[Java中经常有一些不同于c++，下面是一个要注意的例子 代码如下： int b = 1; int a=1; for(int i = 0;i &lt; 100;i++) { b = b++; a++; } System.out.println(&quot;b = &quot;+b); System.out.println(&quot;a = &quot;+a); Output: b = 1a = 101 b++这个表达式是有返回值的，返回的值是自加前的b,所以即使后面的b+自加了，返回的b还是1。 换个思路讲，如果把b++换成++b那么b的输出结果也会是101，因为此时的返回值是自加后的b; 而在c++中（b = b++）和（b++）的输出结果是一样的。 下面看穿插一道经典的C语言的经典输出题目 int a = 1;printf(&quot;%d, %d, a = %d\n&quot;, (a*=2), (a+=3), a);return 0; 题目来源的博客，有答案]]></content>
+    <content type="text"><![CDATA[Java中经常有一些不同于c++，下面是一个要注意的例子 代码如下： 123456789 int b = 1; int a=1;for(int i = 0;i &lt; 100;i++)&#123; b = b++; a++;&#125;System.out.println("b = "+b);System.out.println("a = "+a); Output: b = 1 a = 101 b++这个表达式是有返回值的，返回的值是自加前的b,所以即使后面的b+自加了，返回的b还是1。 换个思路讲，如果把b++换成++b那么b的输出结果也会是101，因为此时的返回值是自加后的b; 而在c++中（b = b++）和（b++）的输出结果是一样的。 下面看穿插一道经典的C语言的经典输出题目 123int a = 1;printf("%d, %d, a = %d\n", (a*=2), (a+=3), a);return 0; 题目来源的博客，有答案]]></content>
       <categories>
         <category>java</category>
       </categories>
