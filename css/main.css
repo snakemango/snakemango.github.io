@@ -152,12 +152,12 @@ template {
   color: #fff;
 }
 body {
-  position: relative;
-  font-family: 'Lato', "PingFang SC", "Microsoft YaHei", sans-serif;
-  font-size: 14px;
-  line-height: 2;
-  color: #555;
-  background: #eee;
+	position: relative;
+	font-family: 'Lato', "PingFang SC", "Microsoft YaHei", sans-serif;
+	font-size: 14px;
+	line-height: 2;
+	color: #555;
+	background: #56f780;
 }
 @media (max-width: 991px) {
   body {
@@ -1714,7 +1714,7 @@ pre .javascript .function {
   width: 4px;
   height: 4px;
   border-radius: 50%;
-  background: #03ac2a;
+  background: #1bff55;
 }
 .feed-link,
 .chat {
