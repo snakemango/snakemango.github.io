@@ -100,17 +100,18 @@
   };
 </script>
 
-  <meta name="description" content="目前没有哦，会加油的">
-<meta property="og:type" content="website">
-<meta property="og:title" content="schedule">
-<meta property="og:url" content="https://snakemango.github.io/schedule/index.html">
+  <meta name="description" content="方法一：从已知数组a中随机取一个数，然后按顺序赋值给另一个长度相同数组b，在赋值给数组b之前，先检查是否已经加入过。 这种方法有明显的缺点，在数据变多时需要耗费极大的时间。 方法二： 先随机出已知数组a的下标值 将取出下标对应数组a的值赋给数组b 删除下标值对应数组a的元素 重复上述操作直至数组a长度为0  代码实现： 12345678910111213141516171819202122publ">
+<meta name="keywords" content="笔记">
+<meta property="og:type" content="article">
+<meta property="og:title" content="数组乱序">
+<meta property="og:url" content="https://snakemango.github.io/算法/2019/10/06/数组的随机输出.html">
 <meta property="og:site_name" content="snakeman的博客">
-<meta property="og:description" content="目前没有哦，会加油的">
+<meta property="og:description" content="方法一：从已知数组a中随机取一个数，然后按顺序赋值给另一个长度相同数组b，在赋值给数组b之前，先检查是否已经加入过。 这种方法有明显的缺点，在数据变多时需要耗费极大的时间。 方法二： 先随机出已知数组a的下标值 将取出下标对应数组a的值赋给数组b 删除下标值对应数组a的元素 重复上述操作直至数组a长度为0  代码实现： 12345678910111213141516171819202122publ">
 <meta property="og:locale" content="zh-CN">
-<meta property="og:updated_time" content="2019-10-05T10:53:14.284Z">
+<meta property="og:updated_time" content="2019-10-06T18:59:59.822Z">
 <meta name="twitter:card" content="summary">
-<meta name="twitter:title" content="schedule">
-<meta name="twitter:description" content="目前没有哦，会加油的">
+<meta name="twitter:title" content="数组乱序">
+<meta name="twitter:description" content="方法一：从已知数组a中随机取一个数，然后按顺序赋值给另一个长度相同数组b，在赋值给数组b之前，先检查是否已经加入过。 这种方法有明显的缺点，在数据变多时需要耗费极大的时间。 方法二： 先随机出已知数组a的下标值 将取出下标对应数组a的值赋给数组b 删除下标值对应数组a的元素 重复上述操作直至数组a长度为0  代码实现： 12345678910111213141516171819202122publ">
 
 
 
@@ -120,7 +121,7 @@
 
   
   
-  <link rel="canonical" href="https://snakemango.github.io/schedule/">
+  <link rel="canonical" href="https://snakemango.github.io/算法/2019/10/06/数组的随机输出">
 
 
 
@@ -131,7 +132,7 @@
 </script>
 
   
-  <title>schedule | snakeman的博客</title>
+  <title>数组乱序 | snakeman的博客</title>
   
 
 
@@ -294,7 +295,7 @@
         
         
           
-          <li class="menu-item menu-item-schedule menu-item-active">
+          <li class="menu-item menu-item-schedule">
 
     
     
@@ -380,90 +381,251 @@
           
             
 
-    
-    
-      
-      
-    
-      
-      
-    
-      
-      
-    
-      
-      
-    
-      
-      
-    
-      
-      
-    
-    
-
-  
-
-
           
           <div id="content" class="content">
             
 
   <div id="posts" class="posts-expand">
     
+
+  
+
+  
+  
+  
+
+  
+
+  <article class="post post-type-normal" itemscope itemtype="http://schema.org/Article">
+  
+  
+  
+  <div class="post-block">
+    <link itemprop="mainEntityOfPage" href="https://snakemango.github.io/算法/2019/10/06/数组的随机输出.html">
+
+    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
+      <meta itemprop="name" content="佘粤颖">
+      <meta itemprop="description" content="热爱生活，热爱学习">
+      <meta itemprop="image" content="/images/avatar.gif">
+    </span>
+
+    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
+      <meta itemprop="name" content="snakeman的博客">
+    </span>
+
     
-    
-    <div class="post-block page">
       <header class="post-header">
 
-<h1 class="post-title" itemprop="name headline">schedule
-
-</h1>
-
-<div class="post-meta">
-  
-  
-
-
-
-</div>
-
-</header>
-
-      
-      
-      
-      <div class="post-body">
         
+        
+          <h1 class="post-title" itemprop="name headline">数组乱序
+
+              
+            
+          </h1>
+        
+
+        <div class="post-meta">
+
+          
+          
+          
+
+          
+            <span class="post-meta-item">
+              <span class="post-meta-item-icon">
+                <i class="fa fa-calendar-o"></i>
+              </span>
+              
+                <span class="post-meta-item-text">发表于</span>
+              
+
+              
+                
+              
+
+              <time title="创建时间：2019-10-06 22:05:29" itemprop="dateCreated datePublished" datetime="2019-10-06T22:05:29+08:00">2019-10-06</time>
+            </span>
+          
+
+          
+            
+
+            
+              <span class="post-meta-item">
+                <span class="post-meta-item-icon">
+                  <i class="fa fa-calendar-check-o"></i>
+                </span>
+                
+                  <span class="post-meta-item-text">更新于</span>
+                
+                <time title="修改时间：2019-10-07 02:59:59" itemprop="dateModified" datetime="2019-10-07T02:59:59+08:00">2019-10-07</time>
+              </span>
+            
+          
+
+          
+            <span class="post-meta-item">
+              <span class="post-meta-item-icon">
+                <i class="fa fa-folder-o"></i>
+              </span>
+              
+                <span class="post-meta-item-text">分类于</span>
+              
+              
+                <span itemprop="about" itemscope itemtype="http://schema.org/Thing"><a href="/categories/算法/" itemprop="url" rel="index"><span itemprop="name">算法</span></a></span>
+
+                
+                
+              
+            </span>
+          
+
+          
+            
+            
+          
+
+          
+          
+
+          
+
+          
+
+          <br>
+          
+
+          
+
+          
+
+        </div>
+      </header>
+    
+
+    
+    
+    
+    <div class="post-body" itemprop="articleBody">
+
+      
+      
+
+      
+        <h3 id="方法一："><a href="#方法一：" class="headerlink" title="方法一："></a>方法一：</h3><p>从已知数组a中随机取一个数，然后按顺序赋值给另一个长度相同数组b，在赋值给数组b之前，先检查是否已经加入过。</p>
+<p>这种方法有明显的缺点，在数据变多时需要耗费极大的时间。</p>
+<h3 id="方法二："><a href="#方法二：" class="headerlink" title="方法二："></a>方法二：</h3><ol>
+<li>先随机出已知数组a的下标值</li>
+<li>将取出下标对应数组a的值赋给数组b</li>
+<li>删除下标值对应数组a的元素</li>
+<li>重复上述操作直至数组a长度为0</li>
+</ol>
+<p>代码实现：</p>
+<figure class="highlight java"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">public</span> <span class="keyword">int</span> []  m2(<span class="keyword">int</span> [] a)&#123;</span><br><span class="line">		  Random rand = <span class="keyword">new</span> Random();</span><br><span class="line">		  <span class="keyword">int</span> [] b = <span class="keyword">new</span> <span class="keyword">int</span>[a.length];</span><br><span class="line">		  <span class="keyword">int</span> k = <span class="number">0</span>;</span><br><span class="line">		  <span class="keyword">while</span> (a.length&gt;<span class="number">0</span>) &#123;</span><br><span class="line">		   <span class="keyword">int</span> index = rand.nextInt(a.length);<span class="comment">//随即数组a下标</span></span><br><span class="line">		   b[k++] = a[index];</span><br><span class="line">		   a = removeElement(a[index], a);</span><br><span class="line">		  &#125;</span><br><span class="line">		  <span class="keyword">return</span> b;</span><br><span class="line">		 &#125; </span><br><span class="line">		 <span class="keyword">public</span> <span class="keyword">int</span> [] removeElement(<span class="keyword">int</span> element,<span class="keyword">int</span> [] a)&#123;</span><br><span class="line">		  <span class="keyword">int</span> [] atemp =<span class="keyword">new</span> <span class="keyword">int</span>[a.length-<span class="number">1</span>];</span><br><span class="line">		  <span class="keyword">int</span> k = <span class="number">0</span>;</span><br><span class="line">		  <span class="keyword">int</span> a2[]=<span class="keyword">new</span> <span class="keyword">int</span>[a.length];</span><br><span class="line">		  <span class="keyword">for</span> (<span class="keyword">int</span> i = <span class="number">0</span>; i &lt; a.length; i++) &#123;</span><br><span class="line">		   <span class="keyword">if</span>(a[i]!=element)&#123;</span><br><span class="line">		    a2[k++] = a[i];</span><br><span class="line">		   &#125;</span><br><span class="line">		  &#125;</span><br><span class="line">		  <span class="keyword">return</span> atemp;</span><br><span class="line">		 &#125;</span><br></pre></td></tr></table></figure>
+
+<p>第二种方法的运算次数是根据数组长度而定的，缺点是大部分运算都耗在删除的判断上,主要是因为数组不像链表那样能删除一个指定位置的值。</p>
+<h3 id="方法三："><a href="#方法三：" class="headerlink" title="方法三："></a>方法三：</h3><ol>
+<li><p>就给数组b [a.length]赋值随机生成的0-1的浮点数</p>
+</li>
+<li><p>对数组b进行排序生成数组</p>
+</li>
+<li><p>按顺序从finda数组的值找到b数组的值对应下标数组a的值</p>
+</li>
+</ol>
+   <figure class="highlight java"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">public</span> <span class="keyword">int</span> []  m3(<span class="keyword">int</span> [] a)&#123;</span><br><span class="line">		  Random rand = <span class="keyword">new</span> Random();</span><br><span class="line">		 <span class="keyword">int</span> [] b = <span class="keyword">new</span> <span class="keyword">int</span>[a.length];</span><br><span class="line">		  <span class="keyword">int</span> k = <span class="number">0</span>;</span><br><span class="line">		  <span class="keyword">int</span> l = a.length;</span><br><span class="line">		  <span class="keyword">int</span> [] finda=<span class="keyword">new</span> <span class="keyword">int</span>[a.length];			</span><br><span class="line">		  <span class="keyword">while</span> (l--&gt;<span class="number">0</span>) &#123;</span><br><span class="line">		   b[k++] = rand.nextInt(a.length);</span><br><span class="line">		      finda[k++] = b[k++];</span><br><span class="line">		  &#125;</span><br><span class="line">		 Arrays.sort(b);<span class="comment">//对数组b 进行排序  </span></span><br><span class="line">		      <span class="keyword">for</span>(<span class="keyword">int</span> j=<span class="number">0</span>;j&lt;a.length;j++)</span><br><span class="line">		          <span class="keyword">for</span>(<span class="keyword">int</span> f=<span class="number">0</span>;f&lt;a.length;f++)</span><br><span class="line">		      &#123;</span><br><span class="line">		      <span class="keyword">if</span>(finda[j]==b[f]) &#123;</span><br><span class="line">		      finda[j]= a[k] ;  </span><br><span class="line">		      &#125;   </span><br><span class="line">		      &#125;      </span><br><span class="line">		  <span class="keyword">return</span> finda;</span><br><span class="line">		 &#125;</span><br></pre></td></tr></table></figure>
+
+<p>   这个方法的缺点是需要耗费相当的时间在数组的排序和查找上，比方法二慢点。</p>
+<h3 id="方法4："><a href="#方法4：" class="headerlink" title="方法4："></a>方法4：</h3><p>   从已知数组a随机选一个数</p>
+<p>   将这个数赋值到b上</p>
+<p>   然后将数组a的最后一个值赋值给前面随机到的数的位置上</p>
+<p>   将数组a长度-1</p>
+<p>   再从数组a下标-1的数组中随机</p>
+<p>   重复上述操作直至cbRand等于数组长度</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br></pre></td><td class="code"><pre><span class="line">public int []  m4(int [] a) &#123;</span><br><span class="line">		  int [] b =new int[a.length];</span><br><span class="line">		  int cbRand = 0;// 索引</span><br><span class="line">		  int cbPosition = 0;// 位置</span><br><span class="line">		  int k =0;</span><br><span class="line">		  do &#123;</span><br><span class="line">		   Random rand = new Random();</span><br><span class="line">		   int r = a.length - cbRand;</span><br><span class="line">		   cbPosition = rand.nextInt(r); </span><br><span class="line">		   b[k++] = a[cbPosition];</span><br><span class="line">		   cbRand++;</span><br><span class="line">		   a[cbPosition] = a[r - 1];// 将最后一位数值赋值给已经被使用的cbPosition</span><br><span class="line">		  &#125; while (cbRand &lt; a.length);</span><br><span class="line">		  return b;</span><br><span class="line">		 &#125;</span><br></pre></td></tr></table></figure>
+
+<p> 这种方法很好运算次数就是数组长度。</p>
+<h3 id="下面是测试代码和结果："><a href="#下面是测试代码和结果：" class="headerlink" title="下面是测试代码和结果："></a>下面是测试代码和结果：</h3><figure class="highlight java"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br></pre></td><td class="code"><pre><span class="line"><span class="function"><span class="keyword">public</span> <span class="keyword">static</span> <span class="keyword">void</span> <span class="title">main</span><span class="params">(String[] args)</span> </span>&#123;</span><br><span class="line">		<span class="keyword">int</span>[] a = <span class="keyword">new</span> <span class="keyword">int</span>[<span class="number">10</span>];</span><br><span class="line">		<span class="keyword">for</span> (<span class="keyword">int</span> i = <span class="number">0</span>; i &lt; a.length; i++) &#123;</span><br><span class="line">			a[i] = i + <span class="number">1</span>;</span><br><span class="line">		&#125;</span><br><span class="line">		luanXutest t = <span class="keyword">new</span> luanXutest();</span><br><span class="line">		a = t.m2(a);</span><br><span class="line">		System.out.println(<span class="string">"a="</span>+Arrays.toString(a));</span><br><span class="line">		a = t.m3(a);</span><br><span class="line">		System.out.println(<span class="string">"a="</span>+Arrays.toString(a));</span><br><span class="line">		a = t.m4(a);</span><br><span class="line">		System.out.println(<span class="string">"a="</span>+Arrays.toString(a));</span><br><span class="line">	&#125;</span><br></pre></td></tr></table></figure>
+
+
+      
+    </div>
+
+    
+
+    
+      
+    
+
+    
+    
+    
+
+    
+
+    
+      
+    
+    
+
+    
+     <div>
+     
+    <div>
+    
+        <div style="text-align:center;color: #ccc;font-size:14px;">-------------本文结束<i class="fa fa-paw"></i>感谢您的阅读-------------</div>
+    
+</div>
+    
+     </div>
+
+
+
+
+    <footer class="post-footer">
+      
         
           
-  
-  
-  
-  <div class="post-block schedule">
-    <div id="schedule">
-      <ul id="event-list">
-      </ul>
-    </div>
+        
+        <div class="post-tags">
+          
+            <a href="/tags/笔记/" rel="tag" <i class="fa fa-tag">># 笔记</a>
+          
+        </div>
+      
+
+      
+      
+      
+
+      
+        <div class="post-nav">
+          <div class="post-nav-next post-nav-item">
+            
+              <a href="/java/2019/07/31/2019-07-31-系统资源.html" rel="next" title="系统资源">
+                <i class="fa fa-chevron-left"></i> 系统资源
+              </a>
+            
+          </div>
+
+          <span class="post-nav-divider"></span>
+
+          <div class="post-nav-prev post-nav-item">
+            
+          </div>
+        </div>
+      
+
+      
+      
+    </footer>
   </div>
   
   
   
+  </article>
 
 
-        
-      </div>
-      
-      
-      
-    </div>
-    
-
-
-
-    
-    
-    
   </div>
 
 
@@ -492,8 +654,17 @@
       
 
       
+        <ul class="sidebar-nav motion-element">
+          <li class="sidebar-nav-toc sidebar-nav-active" data-target="post-toc-wrap">
+            文章目录
+          </li>
+          <li class="sidebar-nav-overview" data-target="site-overview-wrap">
+            站点概览
+          </li>
+        </ul>
+      
 
-      <div class="site-overview-wrap sidebar-panel sidebar-panel-active">
+      <div class="site-overview-wrap sidebar-panel">
         <div class="site-overview">
 
           <div class="site-author motion-element" itemprop="author" itemscope itemtype="http://schema.org/Person">
@@ -658,6 +829,23 @@
         </div>
       </div>
 
+      
+      <!--noindex-->
+        <div class="post-toc-wrap motion-element sidebar-panel sidebar-panel-active">
+          <div class="post-toc">
+
+            
+            
+            
+            
+
+            
+              <div class="post-toc-content"><ol class="nav"><li class="nav-item nav-level-3"><a class="nav-link" href="#方法一："><span class="nav-number">1.</span> <span class="nav-text">方法一：</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#方法二："><span class="nav-number">2.</span> <span class="nav-text">方法二：</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#方法三："><span class="nav-number">3.</span> <span class="nav-text">方法三：</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#方法4："><span class="nav-number">4.</span> <span class="nav-text">方法4：</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#下面是测试代码和结果："><span class="nav-number">5.</span> <span class="nav-text">下面是测试代码和结果：</span></a></li></ol></div>
+            
+
+          </div>
+        </div>
+      <!--/noindex-->
       
 
       
