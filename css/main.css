@@ -4,7 +4,7 @@ html {
   -webkit-text-size-adjust: 100%; /* 2 */
 }
 body {
-	margin: 0;
+  margin: 0;
 }
 main {
   display: block;
@@ -157,8 +157,7 @@ body {
   font-size: 14px;
   line-height: 2;
   color: #555;
-  background: #7ff7d1c9;
-  background-image:url(http://image-go1233.test.upcdn.net/%E5%BE%AE%E4%BF%A1%E5%9B%BE%E7%89%87_20190805155958.png)
+  background: #eee;
 }
 @media (max-width: 991px) {
   body {
@@ -1715,7 +1714,7 @@ pre .javascript .function {
   width: 4px;
   height: 4px;
   border-radius: 50%;
-  background: #ff2203;
+  background: #ffff16;
 }
 .feed-link,
 .chat {
