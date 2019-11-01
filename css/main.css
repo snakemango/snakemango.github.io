@@ -1117,14 +1117,15 @@ pre .javascript .function {
   display: inline-block;
   vertical-align: top;
   line-height: 36px;
-  font-size: 20px;
+  font-size: 26px;
   font-weight: normal;
-  font-family: 'Lato', "PingFang SC", "Microsoft YaHei", sans-serif;
+  font-family: "华文新魏", "楷体", "隶书", "华文中宋";
+  color: #fc9;
 }
 .site-subtitle {
   margin-top: 10px;
-  font-size: 13px;
-  color: #ddd;
+  font-size: 14px;
+  color: #6cf;
 }
 .use-motion .brand {
   opacity: 0;
@@ -2483,9 +2484,10 @@ ul.breadcrumb li+li:last-child {
   position: relative;
 }
 .site-meta {
-  padding: 20px 0;
-  color: #fff;
+  padding: 24px 0;
+  color: #567;
     background: #456545;
+  background-image: url(http://image-go1233.test.upcdn.net/snakeman%20bg.png) 
 }
 @media (max-width: 991px) {
   .site-meta {
