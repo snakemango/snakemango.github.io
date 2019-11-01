@@ -2485,7 +2485,7 @@ ul.breadcrumb li+li:last-child {
 .site-meta {
   padding: 20px 0;
   color: #fff;
-  background: #222;
+    background: #456545;
 }
 @media (max-width: 991px) {
   .site-meta {
