@@ -1670,10 +1670,10 @@ pre .javascript .function {
 .site-author-image {
   display: block;
   margin: 0 auto;
-  padding: 2px;
-  max-width: 120px;
+  padding: px;
+  max-width: 130px;
   height: auto;
-  border: 1px solid #eee;
+  border: 5px solid #7ff7d1c9;
 }
 .site-author-image {
   transition: transform 1s ease-out;
@@ -1691,7 +1691,7 @@ pre .javascript .function {
   margin-top: 0;
   text-align: center;
   font-size: 13px;
-  color: #999;
+  color: #678456;
 }
 .links-of-author {
   margin-top: 20px;
