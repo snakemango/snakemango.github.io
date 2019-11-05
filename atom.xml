@@ -6,7 +6,7 @@
   <link href="/atom.xml" rel="self"/>
   
   <link href="https://snakemango.github.io/"/>
-  <updated>2019-10-21T13:24:49.938Z</updated>
+  <updated>2019-11-05T08:57:20.774Z</updated>
   <id>https://snakemango.github.io/</id>
   
   <author>
@@ -15,6 +15,34 @@
   </author>
   
   <generator uri="http://hexo.io/">Hexo</generator>
+  
+  <entry>
+    <title>HDOJ-1096</title>
+    <link href="https://snakemango.github.io/%E7%AE%97%E6%B3%95/2019/11/05/HDOJ1096.html"/>
+    <id>https://snakemango.github.io/算法/2019/11/05/HDOJ1096.html</id>
+    <published>2019-11-05T13:05:29.000Z</published>
+    <updated>2019-11-05T08:57:20.774Z</updated>
+    
+    <content type="html"><![CDATA[<p>好久没更新了，今天水一道基础输出题，找一下手感。</p><p>完全就是水一篇博文以提高学习动力，因为最近学习效率真的好低。这是杭电oj1096题。</p><p>最近将博客页面优化了一下，看起来还是很舒服滴。</p><h5 id="Problem-Description："><a href="#Problem-Description：" class="headerlink" title="Problem Description："></a>Problem Description：</h5><p>Your task is to calculate the sum of some integers.</p><h5 id="Input："><a href="#Input：" class="headerlink" title="Input："></a>Input：</h5><p>Input contains an integer N in the first line, and then N lines follow. Each line starts with a integer M, and then M integers follow in the same line</p><h5 id="Output"><a href="#Output" class="headerlink" title="Output:"></a>Output:</h5><p>For each group of input integers you should output their sum in one line, and you must note that there is a blank line between outputs.</p><p>大概就是输入整数N代表要输入N行数据，M是每行的开头，每行要输入数据（M+1）个。</p><p>还有输出格式有点坑人，不过这种题大都是这样子的。</p><p>下面是提交的代码。</p><figure class="highlight c++"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br></pre></td><td class="code"><pre><span class="line"><span class="meta">#<span class="meta-keyword">include</span><span class="meta-string">&lt;iostream&gt;</span></span></span><br><span class="line"><span class="keyword">using</span> <span class="keyword">namespace</span> <span class="built_in">std</span>;</span><br><span class="line"><span class="function"><span class="keyword">int</span> <span class="title">main</span><span class="params">()</span></span>&#123;</span><br><span class="line">    <span class="keyword">int</span> n,i;</span><br><span class="line"><span class="keyword">do</span>&#123;</span><br><span class="line">    <span class="built_in">cin</span>&gt;&gt;n;</span><br><span class="line">&#125;<span class="keyword">while</span>(!(n&gt;<span class="number">0</span>));</span><br><span class="line"><span class="keyword">for</span>(i=<span class="number">0</span>;i&lt;n;i++)</span><br><span class="line">&#123;</span><br><span class="line">    <span class="keyword">int</span> t=<span class="number">0</span>;</span><br><span class="line">    <span class="keyword">do</span>&#123;<span class="built_in">cin</span>&gt;&gt;t;</span><br><span class="line">   &#125;<span class="keyword">while</span>(!(n&gt;<span class="number">0</span>));</span><br><span class="line">   <span class="keyword">int</span> p,sum=<span class="number">0</span>;</span><br><span class="line">   <span class="keyword">for</span>(;t--;t&gt;<span class="number">0</span>)&#123;</span><br><span class="line">    <span class="built_in">cin</span>&gt;&gt;p;</span><br><span class="line">    sum+=p;</span><br><span class="line">    &#125;</span><br><span class="line">    <span class="keyword">if</span>(i==n<span class="number">-1</span>)<span class="built_in">cout</span>&lt;&lt;sum&lt;&lt;<span class="built_in">endl</span>;</span><br><span class="line">    <span class="keyword">else</span> <span class="built_in">cout</span>&lt;&lt;sum&lt;&lt;<span class="built_in">endl</span>&lt;&lt;<span class="built_in">endl</span>;</span><br><span class="line">&#125;</span><br><span class="line"><span class="keyword">return</span> <span class="number">0</span>;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure><p>希望能学到点真的东西再来写吧，咳，同志仍需努力。加油，加油，加油。</p>]]></content>
+    
+    <summary type="html">
+    
+      
+      
+        &lt;p&gt;好久没更新了，今天水一道基础输出题，找一下手感。&lt;/p&gt;
+&lt;p&gt;完全就是水一篇博文以提高学习动力，因为最近学习效率真的好低。这是杭电oj1096题。&lt;/p&gt;
+&lt;p&gt;最近将博客页面优化了一下，看起来还是很舒服滴。&lt;/p&gt;
+&lt;h5 id=&quot;Problem-Description
+      
+    
+    </summary>
+    
+      <category term="算法" scheme="https://snakemango.github.io/categories/%E7%AE%97%E6%B3%95/"/>
+    
+    
+      <category term="HDOJ" scheme="https://snakemango.github.io/tags/HDOJ/"/>
+    
+  </entry>
   
   <entry>
     <title>HDOJ-1002</title>
