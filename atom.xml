@@ -6,7 +6,7 @@
   <link href="/atom.xml" rel="self"/>
   
   <link href="https://snakemango.github.io/"/>
-  <updated>2019-11-05T08:57:20.774Z</updated>
+  <updated>2019-12-25T15:11:24.816Z</updated>
   <id>https://snakemango.github.io/</id>
   
   <author>
@@ -15,6 +15,33 @@
   </author>
   
   <generator uri="http://hexo.io/">Hexo</generator>
+  
+  <entry>
+    <title>第十届蓝桥杯——H等差数列</title>
+    <link href="https://snakemango.github.io/%E7%AE%97%E6%B3%95/%E7%AC%AC%E5%8D%81%E5%B1%8A%E8%93%9D%E6%A1%A5%E6%9D%AF/2019/12/25/%E7%AC%AC%E5%8D%81%E5%B1%8A%E8%93%9D%E6%A1%A5%E6%9D%AF%E2%80%94%E2%80%94H%E7%AD%89%E5%B7%AE%E6%95%B0%E5%88%97.html"/>
+    <id>https://snakemango.github.io/算法/第十届蓝桥杯/2019/12/25/第十届蓝桥杯——H等差数列.html</id>
+    <published>2019-12-25T13:05:29.000Z</published>
+    <updated>2019-12-25T15:11:24.816Z</updated>
+    
+    <content type="html"><![CDATA[<h3 id="标题H：等差数列"><a href="#标题H：等差数列" class="headerlink" title="标题H：等差数列"></a>标题H：等差数列</h3><h3 id="（时间限制-1-0s-内存限制-256-0MB-本题总分：20-分）"><a href="#（时间限制-1-0s-内存限制-256-0MB-本题总分：20-分）" class="headerlink" title="（时间限制: 1.0s 内存限制: 256.0MB 本题总分：20 分）"></a>（时间限制: 1.0s 内存限制: 256.0MB 本题总分：20 分）</h3><p><strong>【问题描述】</strong><br>数学老师给小明出了一道等差数列求和的题目。但是粗心的小明忘记了一<br>部分的数列，只记得其中 N 个整数。<br>现在给出这 N 个整数，小明想知道包含这 N 个整数的最短的等差数列有<br>几项？<br><strong>【输入格式】</strong><br>输入的第一行包含一个整数 N。<br>第二行包含 N 个整数 A 1 ,A 2 ,··· ,A N 。(注意 A 1 ∼ A N 并不一定是按等差数<br>列中的顺序给出)<br><strong>【输出格式】</strong><br>输出一个整数表示答案。<br><strong>【样例输入】</strong><br>5<br>2 6 4 10 20<br><strong>【样例输出】</strong><br>10<br><strong>【样例说明】</strong><br>包含 2、6、4、10、20 的最短的等差数列是 2、4、6、8、10、12、14、16、<br>18、20。</p><p><strong>【评测用例规模与约定】</strong><br>对于所有评测用例，2 ≤ N ≤ 100000，0 ≤ A i ≤ 10 9</p><h2 id="我的思路："><a href="#我的思路：" class="headerlink" title="**我的思路："></a>**我的思路：</h2><ol><li>求出公差d,也就是下面的search_d()函数</li><li>用C++ sort函数排序求数组最大最小值</li><li>还需要考虑d为0的情况。</li></ol><p>代码实例如下：</p><figure class="highlight c++"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br><span class="line">29</span><br><span class="line">30</span><br><span class="line">31</span><br><span class="line">32</span><br></pre></td><td class="code"><pre><span class="line"><span class="meta"># <span class="meta-keyword">include</span><span class="meta-string">&lt;iostream&gt;</span></span></span><br><span class="line"><span class="meta"># <span class="meta-keyword">include</span><span class="meta-string">&lt;algorithm&gt;</span></span></span><br><span class="line"><span class="keyword">using</span> <span class="keyword">namespace</span> <span class="built_in">std</span>;</span><br><span class="line"></span><br><span class="line"><span class="function"><span class="keyword">int</span> <span class="title">search_d</span><span class="params">(<span class="keyword">int</span> a[],<span class="keyword">int</span> n)</span></span>&#123;</span><br><span class="line"></span><br><span class="line"><span class="keyword">int</span> t,b,i=<span class="number">0</span>;</span><br><span class="line"><span class="keyword">int</span> d=<span class="number">0</span>;</span><br><span class="line"><span class="keyword">while</span>(i&lt;n<span class="number">-1</span>)&#123;</span><br><span class="line">    <span class="keyword">for</span>(b=i+<span class="number">1</span>;b&lt;n;b++)&#123;</span><br><span class="line">        <span class="keyword">if</span>(a[i]&gt;a[b])t=a[i]-a[b];</span><br><span class="line">        <span class="keyword">else</span> t=a[b]-a[i];</span><br><span class="line">         <span class="keyword">if</span>(d==<span class="number">0</span>||d&gt;t)d=t;</span><br><span class="line">    &#125;</span><br><span class="line">    i++;</span><br><span class="line">&#125;</span><br><span class="line"><span class="keyword">return</span> d;</span><br><span class="line">&#125;</span><br><span class="line"></span><br><span class="line"><span class="function"><span class="keyword">int</span> <span class="title">main</span><span class="params">()</span></span>&#123;</span><br><span class="line">    <span class="keyword">int</span> n,i,d;</span><br><span class="line">    <span class="keyword">int</span> *a;</span><br><span class="line">    <span class="keyword">do</span>&#123;</span><br><span class="line">    <span class="built_in">cin</span>&gt;&gt;n;&#125;<span class="keyword">while</span>(n&lt;<span class="number">2</span>||n&gt;<span class="number">100000</span>);</span><br><span class="line">a=<span class="keyword">new</span> <span class="keyword">int</span>[n];</span><br><span class="line"><span class="keyword">for</span>(i=<span class="number">0</span>;i&lt;n;i++)&#123;<span class="built_in">cin</span>&gt;&gt;a[i];&#125;</span><br><span class="line">d=search_d(a,n);</span><br><span class="line"><span class="keyword">if</span>(d==<span class="number">0</span>)<span class="keyword">return</span> n;</span><br><span class="line">sort(a,a+n);</span><br><span class="line"><span class="built_in">cout</span>&lt;&lt;(a[n<span class="number">-1</span>]-a[<span class="number">0</span>])/d+<span class="number">1</span>;</span><br><span class="line"><span class="keyword">return</span> <span class="number">0</span>;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>]]></content>
+    
+    <summary type="html">
+    
+      
+      
+        &lt;h3 id=&quot;标题H：等差数列&quot;&gt;&lt;a href=&quot;#标题H：等差数列&quot; class=&quot;headerlink&quot; title=&quot;标题H：等差数列&quot;&gt;&lt;/a&gt;标题H：等差数列&lt;/h3&gt;&lt;h3 id=&quot;（时间限制-1-0s-内存限制-256-0MB-本题总分：20-分）&quot;&gt;&lt;a hr
+      
+    
+    </summary>
+    
+      <category term="算法" scheme="https://snakemango.github.io/categories/%E7%AE%97%E6%B3%95/"/>
+    
+      <category term="第十届蓝桥杯" scheme="https://snakemango.github.io/categories/%E7%AE%97%E6%B3%95/%E7%AC%AC%E5%8D%81%E5%B1%8A%E8%93%9D%E6%A1%A5%E6%9D%AF/"/>
+    
+    
+      <category term="蓝桥杯" scheme="https://snakemango.github.io/tags/%E8%93%9D%E6%A1%A5%E6%9D%AF/"/>
+    
+  </entry>
   
   <entry>
     <title>HDOJ-1096</title>
