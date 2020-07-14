@@ -1,6 +1,17 @@
 <?xml version="1.0" encoding="utf-8"?>
 <search>
   <entry>
+    <title><![CDATA[大整数加法]]></title>
+    <url>%2F%E7%AE%97%E6%B3%95%2F2020%2F07%2F14%2F%E5%A4%A7%E6%95%B4%E6%95%B0%E5%8A%A0%E6%B3%95.html</url>
+    <content type="text"><![CDATA[多少十点多]]></content>
+      <categories>
+        <category>算法</category>
+      </categories>
+      <tags>
+        <tag>HDOJ</tag>
+      </tags>
+  </entry>
+  <entry>
     <title><![CDATA[第十届蓝桥杯——H等差数列]]></title>
     <url>%2F%E7%AE%97%E6%B3%95%2F%E7%AC%AC%E5%8D%81%E5%B1%8A%E8%93%9D%E6%A1%A5%E6%9D%AF%2F2019%2F12%2F25%2F%E7%AC%AC%E5%8D%81%E5%B1%8A%E8%93%9D%E6%A1%A5%E6%9D%AF%E2%80%94%E2%80%94H%E7%AD%89%E5%B7%AE%E6%95%B0%E5%88%97.html</url>
     <content type="text"><![CDATA[标题H：等差数列（时间限制: 1.0s 内存限制: 256.0MB 本题总分：20 分）【问题描述】数学老师给小明出了一道等差数列求和的题目。但是粗心的小明忘记了一部分的数列，只记得其中 N 个整数。现在给出这 N 个整数，小明想知道包含这 N 个整数的最短的等差数列有几项？【输入格式】输入的第一行包含一个整数 N。第二行包含 N 个整数 A 1 ,A 2 ,··· ,A N 。(注意 A 1 ∼ A N 并不一定是按等差数列中的顺序给出)【输出格式】输出一个整数表示答案。【样例输入】52 6 4 10 20【样例输出】10【样例说明】包含 2、6、4、10、20 的最短的等差数列是 2、4、6、8、10、12、14、16、18、20。 【评测用例规模与约定】对于所有评测用例，2 ≤ N ≤ 100000，0 ≤ A i ≤ 10 9 **我的思路： 求出公差d,也就是下面的search_d()函数 用C++ sort函数排序求数组最大最小值 还需要考虑d为0的情况。 代码实例如下： 1234567891011121314151617181920212223242526272829303132# include&lt;iostream&gt;# include&lt;algorithm&gt;using namespace std;int search_d(int a[],int n)&#123;int t,b,i=0;int d=0;while(i&lt;n-1)&#123; for(b=i+1;b&lt;n;b++)&#123; if(a[i]&gt;a[b])t=a[i]-a[b]; else t=a[b]-a[i]; if(d==0||d&gt;t)d=t; &#125; i++;&#125;return d;&#125;int main()&#123; int n,i,d; int *a; do&#123; cin&gt;&gt;n;&#125;while(n&lt;2||n&gt;100000);a=new int[n];for(i=0;i&lt;n;i++)&#123;cin&gt;&gt;a[i];&#125;d=search_d(a,n);if(d==0)return n;sort(a,a+n);cout&lt;&lt;(a[n-1]-a[0])/d+1;return 0;&#125;]]></content>

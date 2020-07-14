@@ -157,8 +157,7 @@ body {
   font-size: 14px;
   line-height: 2;
   color: #555;
-  background: #7ff7d1c9;
-  background-image:url(http://image-go1233.test.upcdn.net/blog_snakeman/new_bg2.jpg)
+  background: #eee;
 }
 @media (max-width: 991px) {
   body {
@@ -939,10 +938,10 @@ pre .javascript .function {
 .btn {
   display: inline-block;
   padding: 0 20px;
-  font-size: 16px;
-  color: #e2d545;
-  background: #4d4d4c;
-  border: 3px solid #4ee5f0;
+  font-size: 14px;
+  color: #555;
+  background: #fff;
+  border: 2px solid #555;
   text-decoration: none;
   border-radius: 2px;
   transition-property: background-color;
@@ -1117,15 +1116,14 @@ pre .javascript .function {
   display: inline-block;
   vertical-align: top;
   line-height: 36px;
-  font-size: 26px;
+  font-size: 20px;
   font-weight: normal;
-  font-family: "华文新魏", "楷体", "隶书", "华文中宋";
-  color: #fc9;
+  font-family: 'Lato', "PingFang SC", "Microsoft YaHei", sans-serif;
 }
 .site-subtitle {
   margin-top: 10px;
-  font-size: 14px;
-  color: #6cf;
+  font-size: 13px;
+  color: #ddd;
 }
 .use-motion .brand {
   opacity: 0;
@@ -1175,11 +1173,8 @@ pre .javascript .function {
   }
 }
 .menu {
-  margin-top: 0px;
-  padding-right:20px;
-  padding-left: 20px;
-  padding-top: 10px;
-   background:#ecdd8b;
+  margin-top: 20px;
+  padding-left: 0;
   text-align: center;
 }
 .menu .menu-item {
@@ -1629,9 +1624,8 @@ pre .javascript .function {
 }
 .sidebar a,
 .sidebar span.exturl {
-  color: #ebc8c8;
-  border-bottom-color: #e7cbcb;
-  background:#b3fec7;
+  color: #999;
+  border-bottom-color: #555;
 }
 .sidebar a:hover,
 .sidebar span.exturl:hover {
@@ -1673,10 +1667,10 @@ pre .javascript .function {
 .site-author-image {
   display: block;
   margin: 0 auto;
-  padding: px;
-  max-width: 130px;
+  padding: 2px;
+  max-width: 120px;
   height: auto;
-  border: 5px solid #7ff7d1c9;
+  border: 1px solid #eee;
 }
 .site-author-image {
   transition: transform 1s ease-out;
@@ -1694,7 +1688,7 @@ pre .javascript .function {
   margin-top: 0;
   text-align: center;
   font-size: 13px;
-  color: #678456;
+  color: #999;
 }
 .links-of-author {
   margin-top: 20px;
@@ -1720,7 +1714,7 @@ pre .javascript .function {
   width: 4px;
   height: 4px;
   border-radius: 50%;
-  background: #ffff16;
+  background: #f00fff;
 }
 .feed-link,
 .chat {
@@ -2487,10 +2481,9 @@ ul.breadcrumb li+li:last-child {
   position: relative;
 }
 .site-meta {
-  padding: 24px 0;
-  color: #567;
-    background: #456545;
-  background-image: url(http://image-go1233.test.upcdn.net/snakeman%20bg.png) 
+  padding: 20px 0;
+  color: #fff;
+  background: #222;
 }
 @media (max-width: 991px) {
   .site-meta {
@@ -2773,14 +2766,13 @@ ul.breadcrumb li+li:last-child {
 }
 .post-block {
   padding: 40px;
-  background: #c6e6f3;
-  box-shadow: 0 2px 2px 0 rgba(176, 66, 66, 0.12), 0 3px 1px -2px rgba(0,0,0,0.06), 0 1px 5px 0 rgba(201, 69, 69, 0.12);
+  background: #fff;
+  box-shadow: 0 2px 2px 0 rgba(0,0,0,0.12), 0 3px 1px -2px rgba(0,0,0,0.06), 0 1px 5px 0 rgba(0,0,0,0.12);
   border-radius: initial;
 }
-
 #posts > article + article .post-block {
-  margin-top: 100px;
-  box-shadow: 5 5px 5px 5 rgba(0,0,0,0.12), 0 3px 1px -2px rgba(0,0,0,0.06), 0 1px 5px 0 rgba(0,0,0,0.12), 0 -1px 0.5px 0 rgba(0,0,0,0.09);
+  margin-top: 12px;
+  box-shadow: 0 2px 2px 0 rgba(0,0,0,0.12), 0 3px 1px -2px rgba(0,0,0,0.06), 0 1px 5px 0 rgba(0,0,0,0.12), 0 -1px 0.5px 0 rgba(0,0,0,0.09);
   border-radius: initial;
 }
 .comments {
